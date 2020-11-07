@@ -1,0 +1,16 @@
+.NavBarItem {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.NavBarItemLink {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+    transition: 0.2s;
+}
+
+.NavBarItemLink:hover {
+    background: black;
+    color: var(--logo-color);
+}

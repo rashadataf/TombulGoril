@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import NavBar from '../../UI/NavBar/NavBar'
 
 const Layout = (props) => {
 
@@ -8,7 +9,9 @@ const Layout = (props) => {
                 <link rel="shortcut icon" href="/favicon.png"></link>
                 <title>Tombul Goril</title>
             </Head>
-            <header></header>
+            <header>
+                <NavBar />
+            </header>
             <main>
                 {props.children}
             </main>
