@@ -1,6 +1,8 @@
 import NavBarItem from "./NavBarItem/NavBarItem";
+import {connect} from 'react-redux'
+import classes from './NavBarItems.module.css';
 
-const NavBarItems = () => {
+const NavBarItems = (props) => {
     const linksList = [
         {
             to: '/',
@@ -20,7 +22,7 @@ const NavBarItems = () => {
         }
     ];
     return (
-        <ul>
+        <ul className={`${props.isBackDrop?classes.NavBarItemsBackDrop:classes.NavBarItems}`}>
             {
                 linksList.map((link, index) => <NavBarItem to={link.to} text={link.text} key={index} />)
             }
@@ -28,4 +30,10 @@ const NavBarItems = () => {
     )
 }
 
-export default NavBarItems;
+const mapStateToProps = state => {
+    return {
+        isBackDrop: state.isBackDrop
+    }
+}
+
+export default connect(mapStateToProps)(NavBarItems);

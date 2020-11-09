@@ -1,0 +1,32 @@
+.Menu {
+    width: 64px;
+    height: 64px;
+    transition: all .4s;
+}
+
+.Menu:hover {
+    transform: scale(1) rotate(180deg);
+}
+
+.Menu:active {
+    transform: scale(1.1) rotate(180deg);
+}
+
+.MenuBackDrop {
+    z-index: 20;
+    transform: scale(1) rotate(180deg);
+}
+
+.MenuBackDrop:hover {
+    transform: scale(1) rotate(0deg);
+}
+
+.MenuBackDrop:active {
+    transform: scale(1.1) rotate(0deg);
+}
+
+@media screen and (min-width: 768px) {
+    .Menu {
+        display: none;
+    }
+}

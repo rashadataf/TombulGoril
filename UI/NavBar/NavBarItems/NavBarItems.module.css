@@ -1,0 +1,24 @@
+.NavBarItems {
+    display: none;
+}
+
+.NavBarItemsBackDrop {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+@media screen and (min-width: 768px) {
+    .NavBarItems {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .NavBarItemsBackDrop {
+        right: 0;
+    }
+}

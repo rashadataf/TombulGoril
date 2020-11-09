@@ -1,0 +1,60 @@
+.BackDrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: #000000b9;
+}
+
+.BackDropSlide {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--logo-color);
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -moz-transition-property: all;
+    -moz-transition-timing-function: ease-in;
+}
+
+.BackDropSlideIn {
+    animation: slide-in .1s ease-in 0s 1 forwards normal;
+}
+
+.BackDropSlideOut {
+    animation: slide-out .1s ease-out 0s 1 backwards normal;
+}
+
+@keyframes slide-in {
+    from {
+        position: absolute;
+        top: 0;
+        right: -100vw;
+    }
+
+    to {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    to {
+        position: absolute;
+        top: 0;
+        right: -100vw;
+    }
+}

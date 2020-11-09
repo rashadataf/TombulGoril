@@ -1,7 +1,8 @@
 import actionTypes from "../actions/actionTypes"
 
 const initialState = {
-    url: '/'
+    url: '/',
+    isBackDrop: false
 }
 
 const urlReducer = (state = initialState, action) => {
@@ -10,6 +11,14 @@ const urlReducer = (state = initialState, action) => {
             return {
                 ...state,
                 url: action.payload.url,
+            }
+        case actionTypes.TOGGLE_BACK_DROP:
+            {
+                let isBackDrop = !state.isBackDrop;
+                return {
+                    ...state,
+                    isBackDrop: isBackDrop
+                }
             }
         default:
             return state;
