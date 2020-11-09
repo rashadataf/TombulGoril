@@ -10,7 +10,8 @@
     transition: 0.2s;
 }
 
-.NavBarItemLink:hover {
+.NavBarItemLink:hover,
+.NavBarItemLinkActive {
     background: black;
     color: var(--logo-color);
 }
