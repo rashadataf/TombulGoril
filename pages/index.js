@@ -1,5 +1,35 @@
+import ImageGallery from 'react-image-gallery';
 import Layout from '../Components/Layout/Layout'
 
-export default function Home() {
-  return <Layout><h1>hello from home</h1></Layout>
+const images = [
+  {
+    original: "/banner (1).jpeg",
+  },
+  {
+    original: "/banner (2).jpeg",
+  },
+  {
+    original: "/banner (3).jpeg",
+  },
+  {
+    original: "/banner (4).jpeg",
+  },
+  {
+    original: "/banner (5).jpeg",
+  },
+  {
+    original: "/banner (6).jpeg",
+  },
+];
+
+export default function Index() {
+  return <Layout>
+    <ImageGallery
+      items={images}
+      showThumbnails={false}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      autoPlay={true}
+    />
+  </Layout>
 }

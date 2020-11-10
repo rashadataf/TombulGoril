@@ -4,7 +4,6 @@ import Link from 'next/link';
 import classes from './NavBarItem.module.css';
 
 const NavBarItem = (props) => {
-    console.log(props.url)
     return (
     <li className={classes.NavBarItem}>
         <Link href={props.to}>
