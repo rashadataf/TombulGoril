@@ -26,5 +26,5 @@ a {
 
 .image-gallery-left-nav:hover,
 .image-gallery-right-nav:hover{
-  color: #c4ff0f;
+  color: var(--logo-color);
 }
