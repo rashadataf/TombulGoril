@@ -4,3 +4,9 @@
     align-items: center;
     margin-top: 10rem;
 }
+
+@media screen and (max-width: 800px) {
+    .Cards {
+        flex-wrap: wrap;
+    }
+}

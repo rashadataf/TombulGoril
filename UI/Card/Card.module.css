@@ -26,3 +26,22 @@
     color: var(--logo-color);
     background-color: rgb(53, 53, 90);
 }
+
+@media screen and (max-width: 650px) {
+    .Card {
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .Card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Card p {
+        width: 140px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
