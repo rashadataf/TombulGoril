@@ -1,0 +1,88 @@
+.WhereToUse {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1.5;
+    align-items: center;
+    margin-top: 10rem;
+    background: linear-gradient(to right bottom, rgba(235, 236, 227, 0.712), rgba(177, 231, 68, 0.555));
+}
+
+.WhereToUse h1 {
+    display: block;
+    font-size: 3rem;
+    background-color: var(--logo-color);
+    color: rgb(0, 0, 0);
+    width: 100vw;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 0;
+    box-shadow: 1px 2px 10px #222;
+}
+
+.WhereToUseCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 30px 0;
+}
+
+.WhereToUseCard img {
+    width: 100%;
+    height: 500px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.WhereToUseCard p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.WhereToUseCard a {
+    color: rgb(0, 0, 129);
+}
+
+.WhereToUseCard a:hover {
+    color: var(--logo-color);
+    background-color: rgb(53, 53, 90);
+}
+
+@media screen and (max-width: 550px) {
+    div.WhereToUseCard {
+        width: 80vw;
+    }
+
+    div.WhereToUseCard img {
+        width: 100%;
+        height: 200px;
+    }
+
+    div.WhereToUseCard p {
+        width: 100%;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .WhereToUseCard {
+        width: 500px;
+    }
+
+    .WhereToUseCard img {
+        width: 500px;
+        height: 450px;
+    }
+
+    .WhereToUseCard p {
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .WhereToUseCard {
+        width: 700px;
+    }
+}

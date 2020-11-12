@@ -29,7 +29,7 @@ const Cards = () => (
     {cards.map((card, index) => <Card
       img={card.img}
       text={card.text}
-      key={index + 10}
+      key={index}
       divKey={index.toString()}
       paragraphKey={card.text}
       imgKey={card.img} />)}

@@ -1,6 +1,7 @@
 import ImageGallery from 'react-image-gallery';
 import Cards from '../Components/Cards/Cards';
 import Layout from '../Components/Layout/Layout'
+import WhereToUse from '../Components/WhereToUse/WhereToUse';
 
 const images = [
   {
@@ -33,5 +34,6 @@ export default function Index() {
       autoPlay={true}
     />
     <Cards />
+    <WhereToUse />
   </Layout>
 }
