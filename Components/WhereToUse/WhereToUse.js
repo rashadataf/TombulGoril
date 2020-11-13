@@ -7,25 +7,25 @@ const uses = [
         img: "/MAZAYA_Tobacco.jpg",
         text: "You can use the bottle to fill materials used in the food and tobacco industries.",
         animateIn: "fadeInLeft",
-        delay: 200
+        delay: 500
     },
     {
         img: "/Sanitizer.JPG",
         text: "You can use the bottle to fill sterilizers and alcoholic materials that are used for cleaning.",
         animateIn: "fadeInRight",
-        delay: 200
+        delay: 500
     },
     {
         img: "/Spectrum.jpg",
         text: "You can use the bottle to fill medicinal items like ointments and pills.",
         animateIn: "fadeInLeft",
-        delay: 200
+        delay: 500
     },
     {
         img: "/WD-40.jpg",
         text: "You can use the bottle to fill greasy and oily materials such as machine oils.",
         animateIn: "fadeInRight",
-        delay: 200
+        delay: 500
     }
 ];
 

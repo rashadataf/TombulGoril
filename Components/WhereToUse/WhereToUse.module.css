@@ -4,7 +4,7 @@
     flex-basis: 1.5;
     align-items: center;
     margin-top: 10rem;
-    background: linear-gradient(to right bottom, rgba(235, 236, 227, 0.712), rgba(177, 231, 68, 0.555));
+    /* background: linear-gradient(to right bottom, rgba(235, 236, 227, 0.712), rgba(177, 231, 68, 0.555)); */
 }
 
 .WhereToUse h1 {

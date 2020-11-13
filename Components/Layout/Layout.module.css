@@ -1,0 +1,54 @@
+.LayoutFooter {
+    padding: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background: var(--logo-color);
+    font-weight: 400;
+    font-size: 1rem;
+    height: 30vh;
+}
+
+.LayoutFooterTerms {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.LayoutFooterTerms a:hover {
+    background: black;
+    color: var(--logo-color);
+}
+
+@media screen and (max-width: 300px) {
+    .LayoutFooterCopy {
+        font-size: .7rem;
+    }
+
+    .LayoutFooterTerms {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .LayoutFooter {
+        font-size: .8rem;
+    }
+
+    .LayoutFooterTerms {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .LayoutFooter {
+        flex-direction: column;
+    }
+
+    .LayoutFooterTerms {
+        width: 300px;
+    }
+}
+
