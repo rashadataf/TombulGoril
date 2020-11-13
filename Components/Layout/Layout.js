@@ -3,9 +3,10 @@ import Head from 'next/head'
 import BackDrop from '../../UI/BackDrop/BackDrop'
 import NavBar from '../../UI/NavBar/NavBar'
 import { connect } from 'react-redux';
-import { toggleBackDrop } from '../../store/actions/actions'
+import { toggleBackDrop, setCurrentUrl } from '../../store/actions/actions'
 import SocialMediaIcons from '../../UI/SocialMediaIcons/SocialMediaIcons'
 import classes from './Layout.module.css'
+import Link from 'next/link';
 
 class Layout extends Component {
     componentDidMount() {
@@ -42,9 +43,17 @@ class Layout extends Component {
                     </p>
                     <SocialMediaIcons />
                     <div className={classes.LayoutFooterTerms}>
-                        <div><a href="/terms">Terms Of Use</a></div>
+                        <div>
+                            <Link href="/terms">
+                                <a onClick={() => this.props.setCurrentUrl('/terms')}>Terms Of Use</a>
+                            </Link>
+                        </div>
                         <span>|</span>
-                        <div><a href="/privacy">Privacy Policy</a></div>
+                        <div>
+                            <Link href="/privacy">
+                                <a onClick={() => this.props.setCurrentUrl('/privacy')}>Privacy Policy</a>
+                            </Link>
+                        </div>
                     </div>
                 </footer>
             </div>
@@ -61,6 +70,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         toggleBackDrop: () => dispatch(toggleBackDrop()),
+        setCurrentUrl: (url) => dispatch(setCurrentUrl(url))
     }
 }
 

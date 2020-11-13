@@ -3,14 +3,13 @@ import {setCurrentUrl} from '../../../../store/actions/actions';
 import Link from 'next/link';
 import classes from './NavBarItem.module.css';
 
-const NavBarItem = (props) => {
-    return (
+const NavBarItem = (props) => (
     <li className={classes.NavBarItem}>
         <Link href={props.to}>
-            <a onClick={() => props.setCurrentUrl(props.to)} alt={props.text} className={`${classes.NavBarItemLink} ${props.url==props.to?classes.NavBarItemLinkActive:''}`}>{props.text}</a>
+            <a onClick={() => props.setCurrentUrl(props.to)} alt={props.text} className={`${classes.NavBarItemLink} ${props.url == props.to?classes.NavBarItemLinkActive:''}`}>{props.text}</a>
         </Link>
     </li>
-)}
+)
 
 const mapStateToProps = state => {
     return {
