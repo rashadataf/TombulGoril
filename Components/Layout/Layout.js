@@ -7,9 +7,11 @@ import { toggleBackDrop, setCurrentUrl } from '../../store/actions/actions'
 import SocialMediaIcons from '../../UI/SocialMediaIcons/SocialMediaIcons'
 import classes from './Layout.module.css'
 import Link from 'next/link';
+import FloatingButton from '../../UI/FloatingButton/FloatingButton';
 
 class Layout extends Component {
     componentDidMount() {
+
         window.addEventListener('resize', () => {
             // if the width > 768px
             if (window.innerWidth > 767) {
@@ -20,16 +22,39 @@ class Layout extends Component {
                 }
             }
         })
+        
+        window.addEventListener('scroll', () => {
+            let topButton = document.querySelector('#topButton');
+            let topButtonRect = topButton.getBoundingClientRect();
+
+            let footer = document.querySelector('footer');
+            let footerRect = footer.getBoundingClientRect();
+
+            if (topButton) {
+                if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                    topButton.style.display = "block";
+                } else {
+                    topButton.style.display = "none";
+                }
+                if (topButtonRect.top + topButtonRect.height > (footerRect.top - footerRect.height)) {
+                    topButton.style.bottom = footerRect.height + 5 + "px";
+                }
+                else {
+                    topButton.style.bottom = "20px"
+                }
+            }
+        })
     }
 
     render() {
         return (
-            <div>
+            <div className={classes.Layout}>
                 <Head>
                     <link rel="shortcut icon" href="/favicon.png"></link>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
                     <title>Tombul Goril</title>
                 </Head>
+                <FloatingButton />
                 {this.props.isBackDrop ? <BackDrop /> : null}
                 <header>
                     <NavBar />

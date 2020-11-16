@@ -20,7 +20,7 @@ const cards = [
   {
     img: "/24-hours-support.svg",
     text: ["We are here for you 24/7.\
-      Whenever you need us, do not hesitate and ", <a href="/contact">contact us</a>]
+      Whenever you need us, do not hesitate and ", <a href="/contact">contact us.</a>]
   }
 ];
 

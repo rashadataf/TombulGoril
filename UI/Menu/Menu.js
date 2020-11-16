@@ -3,7 +3,7 @@ import {toggleBackDrop} from '../../store/actions/actions';
 import classes from './Menu.module.css'
 
 const Menu = (props) => (
-    <img src="/menu.svg" className={`${classes.Menu} ${props.isBackDrop?classes.MenuBackDrop:''}`} onClick={() => props.toggleBackDrop()} />
+    <img src="/menu.svg" className={`${props.isBackDrop?classes.MenuBackDrop:classes.Menu}`} onClick={() => props.toggleBackDrop()} />
 );
 
 const mapStateToProps = state => {

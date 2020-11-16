@@ -6,21 +6,27 @@ import WhereToUse from '../Components/WhereToUse/WhereToUse';
 const images = [
   {
     original: "/banner (1).jpeg",
+    originalClass: "mobile"
   },
   {
     original: "/banner (2).jpeg",
+    originalClass: "mobile"
   },
   {
     original: "/banner (3).jpeg",
+    originalClass: "mobile"
   },
   {
     original: "/banner (4).jpeg",
+    originalClass: "mobile"
   },
   {
     original: "/banner (5).jpeg",
+    originalClass: "mobile"
   },
   {
     original: "/banner (6).jpeg",
+    originalClass: "mobile"
   },
 ];
 
@@ -31,7 +37,7 @@ export default function Index() {
       showThumbnails={false}
       showFullscreenButton={false}
       showPlayButton={false}
-      autoPlay={true}
+      autoPlay={false}
     />
     <Cards />
     <WhereToUse />

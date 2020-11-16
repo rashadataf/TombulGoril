@@ -1,14 +1,19 @@
+.Layout {
+    overflow-y: hidden;
+}
+
 .LayoutFooter {
     padding: 1rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     background: var(--logo-color);
     font-weight: 400;
     font-size: 1rem;
-    height: 30vh;
+    height: 20vh;
+    border: 5px solid black;
 }
 
 .LayoutFooterTerms {
