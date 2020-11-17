@@ -11,7 +11,7 @@ const Menu = (props) => (
             let slide = document.querySelector('#slide');
             if (slide) {
                 slide.classList.add('animate__fadeOutLeft');
-                event.target.classList.add('animate__rotateOut')
+                event.target.classList.add('animate__rotateOut');
             } else {
                 if (event.target.classList.contains(classes.Menu)) {
                     props.toggleBackDrop()
