@@ -11,50 +11,5 @@
 .BackDropSlide {
     width: 50vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: var(--logo-color);
-}
-
-.BackDropSlideIn {
-    animation-name: slide-in;
-    animation-delay: 0ms;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-}
-
-.BackDropSlideOut {
-    animation-name: slide-out;
-    animation-delay: 0ms;
-    animation-duration: 300ms;
-    animation-fill-mode: backwards;
-}
-
-@keyframes slide-in {
-    from {
-        position: absolute;
-        top: 0;
-        right: -100vw;
-    }
-
-    to {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-
-@keyframes slide-out {
-    from {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    to {
-        position: absolute;
-        top: 0;
-        right: -100vw;
-    }
 }

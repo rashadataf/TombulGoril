@@ -4,28 +4,22 @@
     transition: all .4s;
 }
 
-.Menu:hover {
-    transform: scale(1.1);
-}
-
 .Menu:active {
     transform: scale(1.1);
 }
 
 .MenuBackDrop {
+    position: absolute;
+    top: 40px;
+    right: 25px;
     width: 64px;
     height: 64px;
-    -webkit-transform: scale(1) rotate(180deg);
     z-index: 20;
     transition: all .4s;
 }
 
-.MenuBackDrop:hover {
-    transform: scale(1.1) rotate(180deg);
-}
-
 .MenuBackDrop:active {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 
 @media screen and (min-width: 768px) {

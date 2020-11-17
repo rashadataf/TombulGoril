@@ -37,7 +37,7 @@ export default function Index() {
       showThumbnails={false}
       showFullscreenButton={false}
       showPlayButton={false}
-      autoPlay={false}
+      autoPlay={true}
     />
     <Cards />
     <WhereToUse />

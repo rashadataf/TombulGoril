@@ -22,7 +22,7 @@ class Layout extends Component {
                 }
             }
         })
-        
+
         window.addEventListener('scroll', () => {
             let topButton = document.querySelector('#topButton');
             let topButtonRect = topButton.getBoundingClientRect();
@@ -51,7 +51,10 @@ class Layout extends Component {
             <div className={classes.Layout}>
                 <Head>
                     <link rel="shortcut icon" href="/favicon.png"></link>
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
+                    <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                    />
                     <title>Tombul Goril</title>
                 </Head>
                 <FloatingButton />
