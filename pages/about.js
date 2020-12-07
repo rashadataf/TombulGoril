@@ -45,19 +45,5 @@ export default function About() {
       }
     `}</style>
     </div>
-    {/* <div
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                margin: "2rem 0",
-            }}
-        >
-            <img
-                src='/logo.jpeg'
-                alt='Tombul Goril logo'
-                className={styles.logo}
-            />
-        </div> */}
-
   </Layout>
 }
