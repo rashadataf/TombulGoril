@@ -5,27 +5,27 @@ import WhereToUse from '../Components/WhereToUse/WhereToUse';
 
 const images = [
   {
-    original: "/banner (1).jpeg",
+    original: "/banner (1).jpg",
     originalClass: "mobile"
   },
   {
-    original: "/banner (2).jpeg",
+    original: "/banner (2).jpg",
     originalClass: "mobile"
   },
   {
-    original: "/banner (3).jpeg",
+    original: "/banner (3).jpg",
     originalClass: "mobile"
   },
   {
-    original: "/banner (4).jpeg",
+    original: "/banner (4).jpg",
     originalClass: "mobile"
   },
   {
-    original: "/banner (5).jpeg",
+    original: "/banner (5).jpg",
     originalClass: "mobile"
   },
   {
-    original: "/banner (6).jpeg",
+    original: "/banner (6).jpg",
     originalClass: "mobile"
   },
 ];

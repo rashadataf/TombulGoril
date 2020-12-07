@@ -31,7 +31,7 @@ const uses = [
 
 const WhereToUse = () => (
     <div className={classes.WhereToUse}>
-        <h1>Where To Use Our Products :</h1>
+        <h1></h1>
         {
             uses.map((use, index) => <ScrollAnimation animateIn={use.animateIn} delay={use.delay} key={index} animateOnce={true} animatePreScroll={false}>
                 <Card img={use.img}

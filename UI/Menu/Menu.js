@@ -6,27 +6,24 @@ const Menu = (props) => (
     <img
         src="/menu.svg"
         id="menu"
-        className={`${props.isBackDrop ? `${classes.MenuBackDrop} animate__animated animate__rotateIn` : classes.Menu}`}
+        className={`${props.isBackDrop ? `${classes.MenuBackDrop} animated` : classes.Menu} animated`}
         onClick={(event) => {
             let slide = document.querySelector('#slide');
             if (slide) {
-                slide.classList.add('animate__fadeOutLeft');
-                event.target.classList.add('animate__rotateOut');
+                slide.classList.add('fadeOutLeft');
+                event.target.classList.add('rotateOut');
             } else {
-                if (event.target.classList.contains(classes.Menu)) {
-                    props.toggleBackDrop()
-                }
-                
-            }
-        }} 
-        onAnimationEnd={(event) => {
-            if (event.target.classList.contains("animate__rotateOut")) {
                 props.toggleBackDrop()
             }
-            if (event.target.classList.contains("animate__rotateIn")) {
-                event.target.classList.remove('animate__rotateIn')
+        }}
+        onAnimationEnd={(event) => {
+            if (event.target.classList.contains("rotateOut")) {
+                props.toggleBackDrop()
             }
-        }}/>
+            if (event.target.classList.contains("rotateIn")) {
+                event.target.classList.remove('rotateIn')
+            }
+        }} />
 );
 
 const mapStateToProps = state => {

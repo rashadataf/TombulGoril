@@ -2,7 +2,9 @@ import actionTypes from "../actions/actionTypes"
 
 const initialState = {
     url: '/',
-    isBackDrop: false
+    isBackDrop: false,
+    img: '',
+    isPreview: false
 }
 
 const urlReducer = (state = initialState, action) => {
@@ -19,6 +21,19 @@ const urlReducer = (state = initialState, action) => {
                     ...state,
                     isBackDrop: isBackDrop
                 }
+            }
+        case actionTypes.TOGGLE_PREVIEW:
+            {
+                let newIsPreview = !state.isPreview;
+                return {
+                    ...state,
+                    isPreview: newIsPreview
+                }
+            }
+        case actionTypes.SET_PREVIEW_IMG:
+            return {
+                ...state,
+                img: action.payload.img
             }
         default:
             return state;

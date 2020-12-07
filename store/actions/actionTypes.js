@@ -1,9 +1,13 @@
 const SET_CURRENT_URL = 'SET_CURRENT_URL';
 const TOGGLE_BACK_DROP = 'TOGGLE_BACK_DROP';
+const SET_PREVIEW_IMG = 'SET_PREVIEW_IMG';
+const TOGGLE_PREVIEW = 'TOGGLE_PREVIEW';
 
 const actionTypes = {
     SET_CURRENT_URL,
-    TOGGLE_BACK_DROP
+    TOGGLE_BACK_DROP,
+    SET_PREVIEW_IMG,
+    TOGGLE_PREVIEW
 }
 
 export default actionTypes;

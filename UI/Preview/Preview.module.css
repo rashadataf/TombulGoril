@@ -1,0 +1,30 @@
+.Preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(28, 28, 36, 0.979);
+}
+
+.Preview img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 100%;
+}
+
+.PreviewClose {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 100;
+}

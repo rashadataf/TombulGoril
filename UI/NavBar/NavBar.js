@@ -6,7 +6,7 @@ import Menu from '../Menu/Menu';
 const NavBar = (props) => (
     <nav className={classes.NavBar}>
         <Logo />
-        {props.isBackDrop?null:[<NavBarItems />,<Menu />]}
+        {props.isBackDrop?null:[<NavBarItems key={1} />,<Menu key={2} />]}
     </nav>
 )
 

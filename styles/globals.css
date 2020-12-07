@@ -13,7 +13,9 @@ body {
 }
 
 :root {
-  --logo-color: #c4ff0f;
+  /* #82C7D6 */
+  /* c4ff0f */
+  --logo-color: #82C7D6;
   --primary-color: var(--logo-color);
 }
 

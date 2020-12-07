@@ -9,18 +9,21 @@ const BackDrop = (props) => (
     <div
         className={classes.BackDrop}
         onClick={() => {
-            document.querySelector('#slide').classList.add('animate__fadeOutLeft');
-            document.querySelector('#menu').classList.add('animate__rotateOut');
+            document.querySelector('#slide').classList.add('fadeOutLeft');
+            document.querySelector('#menu').classList.add('rotateOut');
+        }}
+        onLoad={() => {
+            document.querySelector('#menu').classList.add('rotateIn');
         }}
         onAnimationEnd={(event) => {
-            if (event.target.classList.contains("animate__fadeOutLeft")) {
+            if (event.target.classList.contains("fadeOutLeft")) {
                 props.toggleBackDrop()
             }
         }}>
         <Menu />
         <div
             id="slide"
-            className={`${classes.BackDropSlide} animate__animated ${props.isBackDrop ? "animate__fadeInLeft" : ""}`}
+            className={`${classes.BackDropSlide} animated ${props.isBackDrop ? "fadeInLeft" : ""}`}
             onClick={(event) => event.stopPropagation()}>
             <NavBarItems />
         </div>

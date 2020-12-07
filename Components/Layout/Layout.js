@@ -50,11 +50,10 @@ class Layout extends Component {
         return (
             <div className={classes.Layout}>
                 <Head>
-                    <link rel="shortcut icon" href="/favicon.png"></link>
+                    <link rel="shortcut icon" href="/favicon.svg"></link>
                     <link
                         rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-                    />
+                        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"                    />
                     <title>Tombul Goril</title>
                 </Head>
                 <FloatingButton />

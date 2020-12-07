@@ -24,7 +24,7 @@ const NavBarItems = (props) => {
     return (
         <ul className={`${props.isBackDrop?classes.NavBarItemsBackDrop:classes.NavBarItems}`}>
             {
-                linksList.map((link, index) => <NavBarItem to={link.to} text={link.text} key={index} />)
+                linksList.map((link, index) => <NavBarItem to={link.to} text={link.text} elementKey={index} key={index} />)
             }
         </ul>
     )

@@ -14,3 +14,18 @@ export const toggleBackDrop = () => {
         type: actionTypes.TOGGLE_BACK_DROP
     }
 }
+
+export const setPreviewImage = (img) => {
+    return {
+        type: actionTypes.SET_PREVIEW_IMG,
+        payload: {
+            img: img
+        }
+    }
+}
+
+export const togglePreview = () => {
+    return {
+        type: actionTypes.TOGGLE_PREVIEW
+    }
+}

@@ -8,6 +8,10 @@
     transform: scale(1.1);
 }
 
+.Menu:hover {
+    cursor: pointer;
+}
+
 .MenuBackDrop {
     position: absolute;
     top: 40px;
