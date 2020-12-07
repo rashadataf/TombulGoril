@@ -60,6 +60,11 @@ export default function Contact() {
         color: #1f88ff;
         text-decoration: underline;
       }
+      @media screen and (max-width: 450px) {
+        .info {
+          min-height: 400px;
+        }
+      }
     `}</style>
     </div>
 
