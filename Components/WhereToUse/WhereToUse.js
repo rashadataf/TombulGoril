@@ -4,8 +4,8 @@ import classes from './WhereToUse.module.css'
 
 const uses = [
     {
-        img: "/MAZAYA_Tobacco.jpg",
-        text: "You can use the bottle to fill materials used in the food and tobacco industries.",
+        img: "/Tattoo_Ink.jpg",
+        text: "You can use the bottle to fill Inks for Tattoos, Printers and Shoe Leather Paint",
         animateIn: "fadeInLeft",
         delay: 500
     },
