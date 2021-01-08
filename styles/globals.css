@@ -1,5 +1,12 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 html,
 body {
   padding: 0;
@@ -8,13 +15,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: #f5f5f5;
-  /* background: linear-gradient(to right top, #959e95c9, #abff048e); */
-  overflow-x: hidden;
 }
 
 :root {
-  /* #82C7D6 */
-  /* c4ff0f */
   --logo-color: #82C7D6;
   --primary-color: var(--logo-color);
 }
@@ -22,10 +25,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .image-gallery-left-nav:hover,

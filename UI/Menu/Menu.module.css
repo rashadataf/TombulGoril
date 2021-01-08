@@ -14,8 +14,8 @@
 
 .MenuBackDrop {
     position: absolute;
-    top: 40px;
-    right: 25px;
+    top: 20px;
+    right: 10px;
     width: 64px;
     height: 64px;
     z-index: 20;

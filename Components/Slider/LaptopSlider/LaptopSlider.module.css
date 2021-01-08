@@ -1,0 +1,228 @@
+.Slider {
+  height: calc(100vh - 100px);
+  background: linear-gradient(to bottom, #000000f1, #0d4c5ce9, #000000f1),
+    linear-gradient(to right, #000000b1, #0d4c5ce9, #000000b1),
+    url("/back.png") repeat center center/45% 45%;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.Slider img {
+  backface-visibility: hidden;
+}
+
+.LeftSlide {
+  display: block;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.Slider .CurrentSlide {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 85%;
+  box-shadow: 0px 0px 20px rgb(81, 164, 231);
+  border-radius: 10px;
+}
+
+.Slider .RightSlide {
+  display: block;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+
+.next_prevSlideOut {
+  animation: next_prevOut 600ms ease forwards;
+}
+
+.next_currentSlideOut {
+  animation: next_curOut 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.next_nextSlideOut {
+  animation: next_nextOut 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.next_nextSlideIn {
+  animation: next_nextIn 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.prev_nextSlideOut {
+  animation: prev_nextOut 600ms ease forwards;
+}
+
+.prev_currentSlideOut {
+  animation: prev_curOut 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.prev_prevSlideOut {
+  animation: prev_prevOut 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.prev_prevSlideIn {
+  animation: prev_prevIn 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes next_prevOut {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes next_curOut {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+
+@keyframes next_nextOut {
+  100% {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 85%;
+    box-shadow: 0px 0px 20px rgb(81, 164, 231);
+    border-radius: 10px;
+  }
+}
+
+@keyframes next_nextIn {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes prev_nextOut {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes prev_curOut {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes prev_prevOut {
+  100% {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 85%;
+    box-shadow: 0px 0px 20px rgb(81, 164, 231);
+    border-radius: 10px;
+  }
+}
+
+@keyframes prev_prevIn {
+  100% {
+    display: block;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Slider .CurrentSlide {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 75%;
+    box-shadow: 0px 0px 20px rgb(81, 164, 231);
+    border-radius: 10px;
+  }
+
+  .next_nextSlideOut {
+    animation: next_nextOut_2 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }.prev_prevSlideOut {
+    animation: prev_prevOut_2 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+
+  @keyframes prev_prevOut_2 {
+    100% {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      height: 75%;
+      box-shadow: 0px 0px 20px rgb(81, 164, 231);
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes next_nextOut_2 {
+    100% {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      height: 75%;
+      box-shadow: 0px 0px 20px rgb(81, 164, 231);
+      border-radius: 10px;
+    }
+  }
+}

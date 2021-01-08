@@ -1,13 +1,15 @@
 .NavBarItem {
     display: inline-block;
     margin: 1rem;
+    overflow: hidden;
 }
 
 .NavBarItemLink {
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
     transition: 0.2s;
+    overflow: hidden;
 }
 
 .NavBarItemLink:hover,

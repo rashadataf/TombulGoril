@@ -4,10 +4,11 @@ const initialState = {
     url: '/',
     isBackDrop: false,
     img: '',
-    isPreview: false
+    isPreview: false,
+    timeIntervalHandler: null
 }
 
-const urlReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.SET_CURRENT_URL:
             return {
@@ -35,10 +36,22 @@ const urlReducer = (state = initialState, action) => {
                 ...state,
                 img: action.payload.img
             }
+        case actionTypes.SET_TIME_INTERVAL_HANDLER:
+            return {
+                ...state,
+                timeIntervalHandler: action.payload.handler
+            }
+        case actionTypes.CLEAR_TIME_INTERVAL_HANDLER: {
+            clearInterval(state.timeIntervalHandler);
+            return {
+                ...state,
+                timeIntervalHandler: null
+            }
+        }
         default:
             return state;
     }
 }
 
 
-export default urlReducer;
+export default reducer;

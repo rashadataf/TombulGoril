@@ -4,9 +4,10 @@
   justify-content: space-between;
   background: var(--logo-color);
   padding: 0 0.5rem;
-  height: calc(20vh+10px);
+  height: 100px;
   border-bottom: 2px solid black;
   border-top: 4px solid black;
   border-left: 4px solid black;
   border-right: 4px solid black;
+  overflow: hidden;
 }

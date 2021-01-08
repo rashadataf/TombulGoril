@@ -29,3 +29,18 @@ export const togglePreview = () => {
         type: actionTypes.TOGGLE_PREVIEW
     }
 }
+
+export const setTimeIntervalHandler = (handler) => {
+    return {
+        type: actionTypes.SET_TIME_INTERVAL_HANDLER,
+        payload: {
+            handler: handler
+        }
+    }
+}
+
+export const clearTimeIntervalHandler = () => {
+    return {
+        type: actionTypes.CLEAR_TIME_INTERVAL_HANDLER
+    }
+}
