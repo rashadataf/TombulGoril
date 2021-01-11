@@ -16,8 +16,8 @@ const uses = [
         delay: 500
     },
     {
-        img: "/Spectrum.jpg",
-        text: "You can use the bottle to fill medicinal items like ointments and pills.",
+        img: "/Adh.jpeg",
+        text: "You can use the bottle to fill in adhesive materials.",
         animateIn: "fadeInLeft",
         delay: 500
     },
