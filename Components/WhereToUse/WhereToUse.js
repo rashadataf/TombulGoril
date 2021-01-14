@@ -22,7 +22,7 @@ const uses = [
         delay: 500
     },
     {
-        img: "/WD-40.jpg",
+        img: "/Bike.jpeg",
         text: "You can use the bottle to fill greasy and oily materials such as machine oils.",
         animateIn: "fadeInRight",
         delay: 500
